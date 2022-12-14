@@ -40,7 +40,7 @@ for i in range(0, height - boxSize, boxSize):  # colonne
         if min1 > 50:
             # print(min1)
             greens.append((x2, x1))
-            reds.append((i, j))
+            reds.append((j, i))
 
 for i in range(len(greens)):
     cv2.rectangle(img2, (greens[i][0], greens[i][1]),
